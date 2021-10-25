@@ -1,4 +1,4 @@
-#Mon Oct 25 16:54:40 CEST 2021
-base.0=/Users/melchiorobame/Documents/GitHub/qrcodeapp_xavier/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
+#Mon Oct 25 17:51:21 CEST 2021
+base.0=C\:\\Users\\hp\\AndroidStudioProjects\\qr_code_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

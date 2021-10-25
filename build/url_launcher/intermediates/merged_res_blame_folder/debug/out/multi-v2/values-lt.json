@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/melchiorobame/Documents/GitHub/qrcodeapp_xavier/build/url_launcher/intermediates/res/merged/debug/values-lt/values-lt.xml",
+            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\qr_code_app\\build\\url_launcher\\intermediates\\res\\merged\\debug\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/melchiorobame/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/melchiorobame/Documents/GitHub/qrcodeapp_xavier/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+            "outputFile": "C:\\Users\\hp\\AndroidStudioProjects\\qr_code_app\\build\\url_launcher\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/melchiorobame/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\2e94107f30f39be366a17347c2bf100b\\core-1.1.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
