@@ -24,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
               child: Text(
-                'Bienvenue ! Cette applicatin permet de scanner et de créer des QR codes',
+                'Bienvenue ! Cette applicatin permet de scanner et de créer des QR codes. Fait par Xavier Priva',
                 style: TextStyle(
                   color: Colors.black45,
                 ),
