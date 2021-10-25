@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: Center(
         child: Column(
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
@@ -30,17 +30,20 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.2,
+            ),
             ButtonWidget(
               text: 'Créer un QR Code',
               onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (BuildContext context) => QR_creator(),
+                builder: (BuildContext context) => const QR_creator(),
               )),
             ),
             const SizedBox(height: 32),
             ButtonWidget(
               text: 'Scanner un QR Code',
               onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-                builder: (BuildContext context) => QR_scanner(),
+                builder: (BuildContext context) => const QR_scanner(),
               )),
             ),
           ],

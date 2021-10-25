@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +12,9 @@ class QR_creator extends StatefulWidget {
 
 class _QR_creatorState extends State<QR_creator> {
   final textController = TextEditingController();
+  late String welcomeDefaultValue =
+      'https://www.google.fr/url?sa=i&url=https%3A%2F%2Fwww.objetrama.fr%2Fblog%2Fle-welcome-pack-cadeau-entreprise.html&psig=AOvVaw3h1CBLUeDPKJsBoAPp3WlU&ust=1635264048546000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCND1xLr35fMCFQAAAAAdAAAAABAD';
+  bool isFirst = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +23,7 @@ class _QR_creatorState extends State<QR_creator> {
       ),
       body: Center(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24),
           child: Column(
             children: <Widget>[
               Row(
@@ -38,16 +43,37 @@ class _QR_creatorState extends State<QR_creator> {
                   FloatingActionButton(
                     backgroundColor: Theme.of(context).primaryColor,
                     child: const Icon(Icons.done, size: 30),
-                    onPressed: () => setState(() {}),
+                    onPressed: () => setState(() {
+                      isFirst = false;
+                    }),
                   )
                 ],
               ),
               const SizedBox(height: 42),
-              BarcodeWidget(
-                data: textController.text,
-                barcode: Barcode.qrCode(),
-                height: MediaQuery.of(context).size.width * 0.7,
-              )
+              !isFirst
+                  ? BarcodeWidget(
+                      data: textController.text,
+                      barcode: Barcode.qrCode(),
+                      height: MediaQuery.of(context).size.width * 0.7,
+                    )
+                  : Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        BarcodeWidget(
+                          data: welcomeDefaultValue,
+                          color: Colors.green,
+                          barcode: Barcode.qrCode(),
+                          height: MediaQuery.of(context).size.width * 0.7,
+                        ),
+                        const Text(
+                          'QRcode par défaut',
+                          style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              fontSize: 12,
+                              color: Colors.green),
+                        ),
+                      ],
+                    ),
             ],
           ),
         ),
